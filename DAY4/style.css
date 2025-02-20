@@ -1,0 +1,30 @@
+body{
+    perspective: 700px;
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color:red;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    margin-left: 50%;
+    margin-top: 20%;
+    animation:harsh 10s cubic-bezier(0.19, 1, 0.22, 1) 1s   both;
+    
+}
+#box:hover{
+    transform:translate3d(10px,20px,400px )
+    
+}
+
+@keyframes harsh {
+    10%{
+        background-color: pink;
+    }
+    50%{
+        background-color:yellow;
+    }
+    100%{
+        background-color: red;
+    }
+    
+}

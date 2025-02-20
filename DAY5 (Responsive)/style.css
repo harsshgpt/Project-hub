@@ -1,0 +1,40 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+
+.parent{
+    height: 300px;
+    width: 300px;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.child{
+    background-color: red;
+    border: 2px solid black;
+    
+    
+}
+.child-a{
+    
+    background-color: blue;
+}
+.child-b{
+    
+    background-color: yellow;
+}
+.child-c{
+    
+    background-color: green;
+}
+
+
+

@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    weigth:100%;
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.child{
+    flex-shrink: 0;
+    height: 200px;
+    width: 200px;
+   background-color: red; 
+   border: 3px solid white;
+}
+
+#bg{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675237625753-c01705e314bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:contain;
+    background-repeat: repeat
+
+}
