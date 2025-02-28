@@ -1,4 +1,4 @@
-console.group("Aaj ka hisab");
+console.groupCollapsed("Aaj ka hisab");
 console.log("10");
 console.log("20");
 console.log("30");
