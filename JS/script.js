@@ -1,12 +1,7 @@
-let src = "Harsh";
-
-if(src.indexOf("ars") === -1){ // at the place of indexOf we can write search
-   console.log(false);
-   
-}
-else{
-    console.log(true);
-    
+function printStars(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log('*'.repeat(i));
+    }
 }
 
-let myArr =[1,2,3,4,5];
+printStars(5);
