@@ -1,7 +1,1 @@
-function printStars(n) {
-    for (let i = 1; i <= n; i++) {
-        console.log('*'.repeat(i));
-    }
-}
-
-printStars(5);
+let arr  = [ 1,2,3,4,1,5,13,51,5,1,2,23,5,135,15,1]
