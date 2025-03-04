@@ -12,3 +12,13 @@ function name (){
 }
 
 abcd(name)
+
+//run any hofs in 3 sec
+
+function hof(fn){
+   setTimeout(fn,1000)
+}
+
+hof(function(){
+    console.log("Hi guys i am Harsh Gupta ")
+})
