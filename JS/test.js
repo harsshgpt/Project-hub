@@ -1,8 +1,11 @@
 let n = Number(prompt("enter a number"));
-
+let evensum = 0 ;
+let oddsum = 0 ;
 for(let i = 1;i<=n;i++){
-    console.log(`The table of ${i}`)
-    for(let j = 1;j<=10;j++){
-        console.log(i*j);
+    if(i%2 == 0){
+     evensum += i;
+    }else{
+       oddsum +=i;
     }
 }
+console.log(`The even sum of ${n} is ${evensum} and the odd sum of ${n} id ${oddsum}`);
