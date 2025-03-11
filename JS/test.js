@@ -1,19 +1,11 @@
-let n = Number(prompt("enter a number"));
-let sum = 0 ;
-for(let i = 1; i<=n/2;i++){
-  if(n%i ==0 ){
-    if(i == 1 || i == n){
-        continue;
-    }else{
-        sum++;
-    console.log(i);}
-    
-  }
+let n = 126;
+let rev = 0;
+while(n>0){
+   let rem = n%10;
+   
+   rev = (rev*10)+rem;
+   n = Math.floor(n/10);
+
+
 }
-if(sum == 0 ){
-    console.log("prime");
-    
-}else{
-    console.log("Non prime");
-    
-}
+console.log(rev)
