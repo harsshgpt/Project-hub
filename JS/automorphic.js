@@ -17,4 +17,4 @@
 
 const prompt = require('prompt-sync')();
 let n = prompt("Eneter a number")
-console.log(n);
+console.log(n);   
