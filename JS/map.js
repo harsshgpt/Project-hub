@@ -7,7 +7,7 @@ function har(arrx,fn){
     return arr;
 }
 
-
+let consti = 5;
 
 let me = har(arr,function(value){
     return value+1;
