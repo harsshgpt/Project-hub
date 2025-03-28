@@ -1,1 +1,2 @@
-document.querySelector('h1').innerHTML("HI guys")
+let sel = document.querySelector('h1')
+sel.innerHTML = "Html is changed"
