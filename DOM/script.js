@@ -1,8 +1,9 @@
-let sel = document.querySelector('h1')
-sel.innerHTML = "Html is changed"
-sel.style.color = "purple"
-sel.style.backgroundColor = "white "
-let body = document.querySelector("body")
-sel.addEventListener("click",()=>{
-    body.style.backgroundColor = "red"
-})
+let box = document.querySelector('#box');
+let button = document.querySelector('button');
+let c = 0;
+
+button.addEventListener("click", () => {
+    c++;
+    box.style.backgroundColor = c % 2 !== 0 ? "red" : "wheat";
+    console.log(c);
+});
