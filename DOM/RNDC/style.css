@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#Colorchanger{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+box{
+    height: 15rem;
+    width: 15rem;
+    background-color: black;
+    border: 10px solid;
+    border-color: white;
+    border-radius: 10px;
+}
+button{
+    width: 7rem;
+    font-weight: 700;
+    border: 2px solid;
+    border-color: aqua;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: aliceblue;
+}
