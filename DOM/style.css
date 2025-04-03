@@ -12,11 +12,3 @@ body{
     background-color: rgb(71, 71, 71);
     color: white;
 }
-#box{
- height: 200px;
- width: 200px;
- border-radius: 50%;
- background-color: transparent;
- border: 15px solid ;
- border-color: rgb(255, 255, 255);
-}
