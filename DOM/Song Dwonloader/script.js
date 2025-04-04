@@ -7,7 +7,7 @@ let fill = document.querySelector("#fill")
 bt.addEventListener("click",function(){
     bt.innerHTML = "Dwonloading"
     bt.style.opacity = .5
-    let d = Math.floor(Math.random()*50) ;
+    let d = Math.floor(Math.random()*100) ;
     let c = 0 ;
    let n = setInterval(function(){
     c++;
