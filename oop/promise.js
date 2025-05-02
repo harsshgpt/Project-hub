@@ -11,10 +11,7 @@ function step2(){
     })
 }
 function step3(){
-    return new Promise(function(res,rej){
-        console.log("Step 3 executed");
-        res();
-    })
+    console.log("Step 3 executed");
 }
 
 step1().then(step2).then(step3)
