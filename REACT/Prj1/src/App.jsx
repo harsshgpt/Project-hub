@@ -6,13 +6,10 @@
 import React from 'react'
 
 const App = () => {
-  
   return (
-    <div>
-      
-       </div>
+    <div>App</div>
   )
 }
 
-export default App;
+export default App
 
