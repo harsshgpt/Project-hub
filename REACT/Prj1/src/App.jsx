@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import './App.css'
+// rafce react arrow function export component to import boiler plate code of app.jsx
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    </>
+    <div>App</div>
   )
 }
 
