@@ -3,20 +3,13 @@
 //<Fragment> tags are previously used in the place of<></> which basically use is to not show in real dom of browser 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-import { Fragment } from "react"
 
-
+import React from 'react'
 
 const App = () => {
- const  handler = () => {
-    alert("button clicked");
-  }
   return (
-    <>
-      <button onClick = {handler}>Click</button>
-    </>
+    <div>App</div>
   )
 }
 
-export default App;
-
+export default App
