@@ -8,12 +8,15 @@ import { Fragment } from "react"
 
 
 const App = () => {
+ const  handler = () => {
+    alert("button clicked");
+  }
   return (
     <>
-    
+      <button onClick = {handler}>Click</button>
     </>
   )
 }
 
-export default App
+export default App;
 
