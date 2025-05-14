@@ -1,3 +1,4 @@
+
 import { useState } from "react"
 // To use two way binding we use onchange and Value
 
@@ -18,7 +19,7 @@ function App() {
     
 
    const subch = (e)=>{
-      e.preventDefault();
+    e.preventDefault();
     const newuser={fullname,age} ;
     console.log(newuser)
     
@@ -28,6 +29,7 @@ function App() {
 
   return (
    <>
+     
      <h1>USERS NAME</h1>
       <form  onSubmit={subch}>
     <input 
