@@ -9,13 +9,13 @@ function App() {
 
   ]);
   const render = user.map((user,index)=>{
-    return <li key={index}> {index +1} => {user.name}</li>;
+    return <p key={index}>  {user.name}</p>;
   })
 
   return (
    <>
      <h1>USERS NAME</h1>
-     <ol>{render}</ol>
+     {render}
    </>
   )
 }
