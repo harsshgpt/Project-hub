@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+// To use two way binding we use onchange and value
 
 function App() {
   const [user,setuser] = useState([
