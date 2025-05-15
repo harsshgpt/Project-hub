@@ -1,48 +1,19 @@
 import { useState } from "react"
-import { nanoid } from 'nanoid';
-import { use } from "react";
 
+
+
+import Create from "./components/create";
+import Read from "./components/read";
 
 const App = () => {
-  const [value, setvalue]  = useState("");
-  const[todo,settodo] = useState([
-    {id:1,title:"harsh",iscompleted:false}]
-  )
-  
-  const submithandler = (e)=>{
-   e.preventDefault();
-   let newtodo = {
-    id :nanoid(),
-    value,
-    iscompleted :false
-   }
-   console.log("Added")
-   settodo([...todo,newtodo])
-  
-   setvalue (" ")
-  }
-
-  const rendertodo = todo.map((todo=>{
-      return <li key={todo.id}>{todo.value}</li>
-    }))
-
-
-
+   const[todo,settodo] = useState([
+    ])
+    let C = false;
+    
   return (
     <>
-    <hr />
-    <form onSubmit={submithandler} >
-      <input
-      value = {value}
-      onChange={(e)=>setvalue(e.target.value)}
-      type="text" />
-      <br />
-       <button >Submit</button>
-       <hr />
-    </form>
-    <hr />
-    <h1>Pending TODO</h1>
-    <ol>{rendertodo}</ol>
+    <Create todo = {todo} settodo = {settodo}  C = {C}/>
+    <Read todo = {todo} C = {C} />
     </>
     
   )
