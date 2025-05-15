@@ -43,12 +43,6 @@ const App = () => {
     <hr />
     <h1>Pending TODO</h1>
     <ol>{rendertodo}</ol>
-
-    
-   
-
-    
-
     </>
     
   )
