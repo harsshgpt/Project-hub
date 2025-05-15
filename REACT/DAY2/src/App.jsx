@@ -1,21 +1,33 @@
 import { useState } from "react"
 import { nanoid } from 'nanoid';
+import { use } from "react";
 
 
 const App = () => {
   const [value, setvalue]  = useState("");
+  const[todo,settodo] = useState([
+    {id:1,title:"harsh",iscompleted:false}]
+  )
   
-
   const submithandler = (e)=>{
    e.preventDefault();
-   const newtodo ={
+   let newtodo = {
     id :nanoid(),
     value,
     iscompleted :false
    }
-   console.log(newtodo)
-   console.log("runned")
+   console.log("Added")
+   settodo([...todo,newtodo])
+  
+   setvalue (" ")
   }
+
+  const rendertodo = todo.map((todo=>{
+      return <li key={todo.id}>{todo.value}</li>
+    }))
+
+
+
   return (
     <>
     <hr />
@@ -28,6 +40,11 @@ const App = () => {
        <button >Submit</button>
        <hr />
     </form>
+    <hr />
+    <h1>Pending TODO</h1>
+    <ol>{rendertodo}</ol>
+
+    
    
 
     
