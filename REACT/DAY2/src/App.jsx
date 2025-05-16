@@ -9,14 +9,14 @@ const App = () => {
    const[todo,settodo] = useState([
     ])
     let C = false;
-    if(todo.length-1 == 1 ){
+    if(todo.length-1 == 6 ){
       C = true;
     }
     
   return (
     <>
     <Create todo = {todo} settodo = {settodo}  C = {C}/>
-    <Read todo = {todo} C = {C} />
+    <Read todo = {todo} settodo = {settodo} C = {C} />
     </>
     
   )

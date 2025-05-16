@@ -17,7 +17,7 @@ function create(props) {
     iscompleted :false
    }
    console.log("Added")
-   if(todo.length < 2){
+   if(todo.length < 7){
    settodo([...todo,newtodo])
    setvalue("")
    
