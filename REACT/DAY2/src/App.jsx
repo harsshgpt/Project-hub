@@ -14,10 +14,10 @@ const App = () => {
     }
     
   return (
-    <>
+    <div className="w-screen h-screen bg-gray-600 px-10 py-10 flex flex-col gap-10">
     <Create todo = {todo} settodo = {settodo}  C = {C}/>
     <Read todo = {todo} settodo = {settodo} C = {C} />
-    </>
+    </div>
     
   )
 }

@@ -27,10 +27,11 @@ function create(props) {
   }
 
   return (
-    <>
+    <div className='bg-yellow-500 w-5vh rounded-2xl px-5 py-2 flex flex-col gap-2.5'>
     <h1 id='create'>CREAT TASK</h1>
         <form onSubmit={submithandler} >
       <input
+      className='bg-white rounded-sm'
       value = {value}
       onChange={(e)=>setvalue(e.target.value)}
       type="text" />
@@ -38,7 +39,7 @@ function create(props) {
        <button >Submit</button>
        
     </form>
-    </>
+    </div>
   )
 }
 
