@@ -19,9 +19,11 @@ function create(props) {
    console.log("Added")
    if(todo.length < 2){
    settodo([...todo,newtodo])
+   setvalue("")
+   
    }
   
-   setvalue (" ")
+   
   }
 
   return (
