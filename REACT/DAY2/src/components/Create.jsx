@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react"
 import { nanoid } from 'nanoid';
+import {toast} from"react-toastify";
 
 function create(props) {
    const todo = props.todo;
@@ -19,6 +20,7 @@ function create(props) {
    console.log("Added")
    if(todo.length < 7){
    settodo([...todo,newtodo])
+   toast.success("HI BABY YOU JUST CREATED A TODO❤️")
    setvalue("")
    
    }

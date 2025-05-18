@@ -1,4 +1,5 @@
 import './Read.css'
+import {toast} from "react-toastify";
 
 function read(props) {
     const todo = props.todo;
@@ -7,6 +8,7 @@ function read(props) {
      const deletehandler = (id)=>{
        const filterd = todo.filter((todo) => id != todo.id)
        settodo(filterd)
+       toast.warn(`Deleted baby`)
      }
      const rendertodo = todo.map((todo=>{
       return <li key={todo.id}>{todo.value}
