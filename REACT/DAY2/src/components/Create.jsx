@@ -10,7 +10,7 @@ function create(props) {
     const [value, setvalue]  = useState("");
     
    
-  const submithandler = (e)=>{
+  const submithandler = (e)=>{ 
    e.preventDefault();
    let newtodo = {
     id :nanoid(),
