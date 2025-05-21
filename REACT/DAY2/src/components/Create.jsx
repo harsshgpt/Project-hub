@@ -20,7 +20,7 @@ function create(props) {
    console.log("Added")
    if(todo.length < 7){
    settodo([...todo,newtodo])
-   toast.success("HI BABY YOU JUST CREATED A TODO❤️")
+   toast.success("Todo created")
    setvalue("")
    
    }
@@ -29,8 +29,8 @@ function create(props) {
   }
 
   return (
-    <div className='bg-blue-900 w-[50%]  rounded-2xl px-5 py-2 flex flex-col gap-30 '>
-    <h1 id='create' className='text-7xl font-thin '>CREAT TASK</h1>
+    <div className='bg-blue-900 w-[50%]  rounded-2xl px-5 py-2 flex flex-col gap-30 mt-5 px-10 py-10'>
+    <h1 id='create' className='text-7xl font-thin mt-5 '>CREAT TASK</h1>
     <form onSubmit={submithandler} className='flex flex-col gap-10  ' >
       <input
       className='bg-white rounded-sm h-15 w-[80%] font-thin text-2xl '
@@ -38,7 +38,7 @@ function create(props) {
       onChange={(e)=>setvalue(e.target.value)}
       type="text" />
       <br />
-       <button className=''>Submit</button>
+       <button className='bg-white px-1 py-2 font-bold rounded-xl w-30'>Submit</button>
        
     </form>
     </div>
